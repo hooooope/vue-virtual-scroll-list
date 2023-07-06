@@ -127,7 +127,7 @@ export default class Virtual {
 
     start = Math.max(start, 0)
 
-    this.updateRange(this.range.start, this.getEndByStart(start))
+    this.checkRange(this.range.start, this.getEndByStart(start))
   }
 
   // when slot size change, we also need force update
